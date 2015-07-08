@@ -1,0 +1,16 @@
+# Entry 1: <%= @olcSuffix %>
+dn: <%= @olcSuffix %>
+dc: <%= @domain1 %>
+o: <%= @domain2 %>
+objectclass: top
+objectclass: dcObject
+objectclass: organization
+
+# Entry 2: cn=superadmin,dc=d4d-ldap,dc=relevancelab,dc=com
+dn: <%= @superuserDN %>
+cn: <%= @superuser %>
+givenname: <%= @superuser %>
+objectclass: inetOrgPerson
+sn: cuser
+uid: <%= @superuser %>
+userpassword: <%= @superuser_pswd %>
